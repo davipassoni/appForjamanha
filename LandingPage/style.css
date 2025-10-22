@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+.wrap-img{
+ 
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.wrap-Línks{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+    
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 3px 20px rgb(0, 0, 0,0.456);
+    z-index: 999;
+}
+#s1{
+    background-color: rgb(143, 82, 223);
+    min-height: 100vh;
+    padding-top:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    width: 350px;
+}
+
+.wrap-banner{
+    border-radius: 999px;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+}
+.wrap-banner img{
+    width: 350px;
+    height: 350px;
+    filter: grayscale(1);
+}
+.wrap-banner img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.right h1{
+    font-size: 48px;
+    width: 100%;
+}
+.right p{
+    width: 100%;
+    font-size: 20px;
+}
+
+#s2{
+    background-color: rgb(255, 187, 0);
+    min-height: 100vh;
+    padding-top:80px;
+}
+#s3{
+    background-color: rgb(55, 10, 112);
+    min-height: 100vh;
+    padding-top:80px;
+}
+#s4{
+    background-color: rgb(226, 149, 6);
+    min-height: 100vh;
+    padding-top:80px;
+}
+
+.wrap-Línks a{
+    text-decoration: none;
+    color: rgb(194, 33, 22);
+    font-weight: bold;
+    transition:all 200ms ease-in-out;
+}
+.wrap-Línks a:hover{
+    text-decoration: underline;
+    color: rgb(53, 8, 112);
+}
+
+@media(width <=768px ){
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .wrap-Línks a{
+        text-align: center;
+    }
+    #s1,#s2,#s3,#s4{
+        padding-top: 50px;
+        min-height: 50vh;
+        height: auto;
+    }
+    #s1{
+        flex-direction: column;
+        padding-top:130px ;
+    }
+    .left{
+        width:100% ;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrap-banner{
+    width: 250px;
+    height: 250px;
+}
+.wrap-banner img{
+    width: 250px;
+    height: 250px;
+}
+
+}
